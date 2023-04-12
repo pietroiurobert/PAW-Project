@@ -53,6 +53,7 @@ namespace PAW_Proiect
             }
             else
             {
+                errorProvider1.Clear();
                 Client client = new Client();
                 client.Nume = tbNume.Text;
                 client.Email = tbEmail.Text;
@@ -60,6 +61,11 @@ namespace PAW_Proiect
                 newUserPassword user = new newUserPassword(this, client, lista);
                 user.ShowDialog(this);
             }
+        }
+
+        private void newUser_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

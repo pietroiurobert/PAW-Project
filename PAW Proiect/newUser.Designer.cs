@@ -173,6 +173,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "newUser";
             this.Text = "newUser";
+            this.Load += new System.EventHandler(this.newUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
